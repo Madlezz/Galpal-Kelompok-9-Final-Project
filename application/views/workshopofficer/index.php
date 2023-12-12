@@ -51,7 +51,7 @@
                     echo $cek;
                     ?>
                 </div>
-                <a href="<?= base_url('ProjectLeader/ongoing'); ?>">
+                <a href="<?= base_url('WorkshopOfficer/ongoing'); ?>">
                     <p class="card-text text-white">See Detail <i class="fas fa-angle-double-right ml-2"></i></p>
                 </a>
             </div>
