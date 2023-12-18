@@ -18,16 +18,12 @@
                 </div>
 
                 <div class="form-group">
-                    <select class="custom-select" id="tipe" name="tipe">
+                    <select class="form-select form-select-lg rounded-pill fs-6" id="tipe" name="tipe" aria-label="Default select example">
                         <option value="" <?= set_select('tipe', ''); ?>>Select Dock Type</option>
-                        <option value="Type1" <?= set_select('tipe', 'Type1'); ?>>Type 1</option>
-                        <option value="Type2" <?= set_select('tipe', 'Type2'); ?>>Type 2</option>
-                        <option value="Type3" <?= set_select('tipe', 'Type3'); ?>>Type 3</option>
-                        <option value="Type4" <?= set_select('tipe', 'Type4'); ?>>Type 4</option>
-                        <option value="Type5" <?= set_select('tipe', 'Type5'); ?>>Type 5</option>
-                        <option value="Type6" <?= set_select('tipe', 'Type6'); ?>>Type 6</option>
-                        <option value="Type7" <?= set_select('tipe', 'Type7'); ?>>Type 7</option>
-                        <option value="Type8" <?= set_select('tipe', 'Type8'); ?>>Type 8</option>
+                        <option value="Floating Dock" <?= set_select('tipe', 'Floating Dock'); ?>>Floating Dock</option>
+                        <option value="Graving Dock" <?= set_select('tipe', 'Graving Dock'); ?>>Graving Dock</option>
+                        <option value="Rampway" <?= set_select('tipe', 'Rampway'); ?>>Rampway</option>
+                        <option value="Helling Dock" <?= set_select('tipe', 'Helling Dock'); ?>>Helling Dock</option>
                     </select>
                     <?= form_error('tipe', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
