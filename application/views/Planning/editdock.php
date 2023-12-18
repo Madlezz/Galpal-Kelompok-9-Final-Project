@@ -20,13 +20,10 @@
                 <div class="form-group">
                     <select class="form-select form-select-lg rounded-pill fs-6" id="tipe" name="tipe" aria-label="Default select example">
                         <option value="" <?= set_select('tipe', ''); ?>>Select Dock Type</option>
-                        <option value="Kargo" <?= set_select('tipe', 'Kargo', ($galangan['tipe'] === 'Kargo' || $galangan['tipe'] === '')); ?>>Kargo</option>
-                        <option value="Tanker" <?= set_select('tipe', 'Tanker', ($galangan['tipe'] === 'Tanker')); ?>>Tanker</option>
-                        <option value="Kontainer" <?= set_select('tipe', 'Kontainer', ($galangan['tipe'] === 'Kontainer')); ?>>Kontainer</option>
-                        <option value="Feri" <?= set_select('tipe', 'Feri', ($galangan['tipe'] === 'Feri')); ?>>Feri</option>
-                        <option value="Peti kemas" <?= set_select('tipe', 'Peti kemas', ($galangan['tipe'] === 'Peti kemas')); ?>>Peti kemas</option>
-                        <option value="Tunda" <?= set_select('tipe', 'Tunda', ($galangan['tipe'] === 'Tunda')); ?>>Tunda</option>
-                        <option value="Samudra" <?= set_select('tipe', 'Samudra', ($galangan['tipe'] === 'Samudra')); ?>>Samudra</option>
+                        <option value="Floating Dock" <?= set_select('tipe', 'Floating Dock', ($galangan['tipe'] === 'Floating Dock' || $galangan['tipe'] === '')); ?>>Floating Dock</option>
+                        <option value="Graving Dock" <?= set_select('tipe', 'Graving Dock', ($galangan['tipe'] === 'Graving Dock')); ?>>Graving Dock</option>
+                        <option value="Rampway" <?= set_select('tipe', 'Rampway', ($galangan['tipe'] === 'Rampway')); ?>>Rampway</option>
+                        <option value="Helling Dock" <?= set_select('tipe', 'Helling Dock', ($galangan['tipe'] === 'Helling Dock')); ?>>Helling Dock</option>
                     </select>
                     <?= form_error('tipe', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
