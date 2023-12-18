@@ -18,16 +18,15 @@
                 </div>
 
                 <div class="form-group">
-                    <select class="custom-select" id="tipe" name="tipe">
+                    <select class="form-select form-select-lg rounded-pill fs-6" id="tipe" name="tipe" aria-label="Default select example">
                         <option value="" <?= set_select('tipe', ''); ?>>Select Dock Type</option>
-                        <option value="Type1" <?= set_select('tipe', 'Type1', ($galangan['tipe'] === 'Type1' || $galangan['tipe'] === '')); ?>>Type 1</option>
-                        <option value="Type2" <?= set_select('tipe', 'Type2', ($galangan['tipe'] === 'Type2')); ?>>Type 2</option>
-                        <option value="Type3" <?= set_select('tipe', 'Type3', ($galangan['tipe'] === 'Type3')); ?>>Type 3</option>
-                        <option value="Type4" <?= set_select('tipe', 'Type4', ($galangan['tipe'] === 'Type4')); ?>>Type 4</option>
-                        <option value="Type5" <?= set_select('tipe', 'Type5', ($galangan['tipe'] === 'Type5')); ?>>Type 5</option>
-                        <option value="Type6" <?= set_select('tipe', 'Type6', ($galangan['tipe'] === 'Type6')); ?>>Type 6</option>
-                        <option value="Type7" <?= set_select('tipe', 'Type7', ($galangan['tipe'] === 'Type7')); ?>>Type 7</option>
-                        <option value="Type8" <?= set_select('tipe', 'Type8', ($galangan['tipe'] === 'Type8')); ?>>Type 8</option>
+                        <option value="Kargo" <?= set_select('tipe', 'Kargo', ($galangan['tipe'] === 'Kargo' || $galangan['tipe'] === '')); ?>>Kargo</option>
+                        <option value="Tanker" <?= set_select('tipe', 'Tanker', ($galangan['tipe'] === 'Tanker')); ?>>Tanker</option>
+                        <option value="Kontainer" <?= set_select('tipe', 'Kontainer', ($galangan['tipe'] === 'Kontainer')); ?>>Kontainer</option>
+                        <option value="Feri" <?= set_select('tipe', 'Feri', ($galangan['tipe'] === 'Feri')); ?>>Feri</option>
+                        <option value="Peti kemas" <?= set_select('tipe', 'Peti kemas', ($galangan['tipe'] === 'Peti kemas')); ?>>Peti kemas</option>
+                        <option value="Tunda" <?= set_select('tipe', 'Tunda', ($galangan['tipe'] === 'Tunda')); ?>>Tunda</option>
+                        <option value="Samudra" <?= set_select('tipe', 'Samudra', ($galangan['tipe'] === 'Samudra')); ?>>Samudra</option>
                     </select>
                     <?= form_error('tipe', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
