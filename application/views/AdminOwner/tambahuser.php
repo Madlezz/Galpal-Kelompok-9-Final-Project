@@ -25,7 +25,7 @@
                     <?= form_error('alamat', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
                 <div class="form-group">
-                    <select class="form-select form-select-lg rounded-pill fs-6" id="role" name="role" aria-label="Default select example">
+                    <select class="form-select form-select-lg rounded-pill fs-6" id="jabatan" name="jabatan" aria-label="Default select example">
                         <option value="3">Superintendent</option>
                         <option value="4">Docking Monitoring</option>
                         <option value="5">Ship Manager</option>
