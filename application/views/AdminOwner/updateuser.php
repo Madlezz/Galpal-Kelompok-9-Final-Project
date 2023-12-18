@@ -26,11 +26,12 @@
                     <?= form_error('alamat', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
                 <div class="form-group">
-                    <select class="form-select form-select-lg rounded-pill fs-6" id="role" name="role" aria-label="Default select example">
-                        <option value="3">Superintendent</option>
-                        <option value="4">Docking Monitoring</option>
-                        <option value="5">Ship Manager</option>
+                    <select class="form-select form-select-lg rounded-pill fs-6" id="jabatan" name="jabatan" aria-label="Default select example">
+                        <option value="Superintendent" <?= set_select('jabatan', 'Superintendent', ($user['jabatan'] === 'Superintendent')); ?>>Superintendent</option>
+                        <option value="Docking Monitoring" <?= set_select('jabatan', 'Docking Monitoring', ($user['jabatan'] === 'Docking Monitoring')); ?>>Docking Monitoring</option>
+                        <option value="Ship Manager" <?= set_select('jabatan', 'Ship Manager', ($user['jabatan'] === 'Ship Manager')); ?>>Ship Manager</option>
                     </select>
+                    <?= form_error('jabatan', '<small class="text-danger pl-3">', '</small>'); ?>
                 </div>
                 <button type="submit" class="btn btn-primary btn-user btn-block">
                     Submit
